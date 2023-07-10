@@ -5,7 +5,7 @@ set -e
 echo "postCreateCommand: running as: $(id)"
 
 echo "postCreateCommand: Fixing permissions"
-sudo chown vscode \
+sudo chown node \
   ~/.ssh \
   ~/.kube \
   ~/.config

@@ -27,12 +27,12 @@
   "workspaceMount": "type=bind,src=${localWorkspaceFolder},dst=/workspace,consistency=cached",
   "mounts": [
     "type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock",
-    "type=bind,src=${localEnv:HOME}/.oh-my-zsh/custom/aliases.zsh,dst=/home/vscode/.oh-my-zsh/custom/aliases.zsh",
-    "type=bind,src=${localEnv:HOME}/.ssh/,dst=/home/vscode/.ssh/",
-    "type=bind,src=${localEnv:HOME}/.config/gh,dst=/home/vscode/.config/gh",
-    "type=bind,src=${localEnv:HOME}/.kube/config,dst=/home/vscode/.kube/config",
-    "type=bind,src=${localEnv:HOME}/.aws/credentials,dst=/home/vscode/.aws/credentials",
-    "type=bind,src=${localEnv:HOME}/.zsh_history,dst=/home/vscode/.zsh_history"
+    "type=bind,src=${localEnv:HOME}/.oh-my-zsh/custom/aliases.zsh,dst=/home/node/.oh-my-zsh/custom/aliases.zsh",
+    "type=bind,src=${localEnv:HOME}/.ssh/,dst=/home/node/.ssh/",
+    "type=bind,src=${localEnv:HOME}/.config/gh,dst=/home/node/.config/gh",
+    "type=bind,src=${localEnv:HOME}/.kube/config,dst=/home/node/.kube/config",
+    "type=bind,src=${localEnv:HOME}/.aws/credentials,dst=/home/node/.aws/credentials",
+    "type=bind,src=${localEnv:HOME}/.zsh_history,dst=/home/node/.zsh_history"
   ],
   "containerEnv": {
     "AWS_PROFILE": "devcontainer_tsnode"
