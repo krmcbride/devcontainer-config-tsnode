@@ -37,7 +37,8 @@
     "type=bind,src=${localEnv:HOME}/.zsh_history,dst=/home/node/.zsh_history"
   ],
   "containerEnv": {
-    "AWS_PROFILE": "devcontainer_tsnode"
+    "AWS_PROFILE": "devcontainer_tsnode",
+    "GH_NPM_TOKEN": "${localEnv:GH_NPM_TOKEN}"
   },
   "remoteUser": "node",
   "postCreateCommand": ["./.devcontainer/postCreateCommand.sh"]
